@@ -1,0 +1,33 @@
+h1 {
+	margin: 10px;
+}
+
+h2 {
+	margin: 10px;
+}
+
+h3 {
+	margin: 10px;
+}
+
+p {
+	margin: 10px;
+	line-height: 2;
+}
+
+#intro {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+}
+
+#introText {
+	background-color: rgb(218 235 254);
+	padding: 10px;
+}
+
+.heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
