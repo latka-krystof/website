@@ -2,10 +2,12 @@ import './Home.css';
 
 import React, { useState } from 'react';
 
-import ProfilePicture from '../assets/TKFF_Fotografie.jpg';
+import ProfilePicture from '../assets/Profile_Pic.JPG';
 import CV from '../assets/CV_UCLA_Revised.pdf';
-import ArticlePic from '../assets/Publications_2.png';
+import ArticlePic from '../assets/Publications_1.png';
 import VervitApp from '../assets/Vervit_App.png';
+import Investment from '../assets/Investment_Competition.png';
+
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -25,9 +27,9 @@ function Home() {
 					<p>
 						You can find me on <a href="https://github.com/latka-krystof"><b>GitHub</b></a>, <a href="https://gitlab.com/latka-krystof"><b>GitLab</b></a>, <a href="https://www.linkedin.com/in/krystof-latka"><b>LinkedIn</b></a>, and <a href="https://app.joinhandshake.com/stu/users/40730466"><b>Handshake</b></a>.
 					</p>
-					<p>Here is my <a href={CV}><b>resume</b></a>.</p>
+					<p>Please, feel free to learn more about me below. If you would like a concise summary of my activities and accomplishments, here is my <a href={CV}><b>resume</b></a>.</p>
 				</div>
-				<img src={ProfilePicture} alt="" />
+				<img style={{width: '35%', height: 'auto'}} src={ProfilePicture} alt="" />
 			</div>
 			<div>
 				<div className="heading">
@@ -58,10 +60,12 @@ function Home() {
 				</div>
 				<hr style={{color: 'black'}}></hr>
 				<div className="thumbnail">
-					<img style={{width: '40%', height: 'auto'}} src = {ArticlePic} alt="" />
+					<img style={{width: '30%', height: 'auto'}} src = {ArticlePic} alt="" />
 					<div className="thumbnailText">
 						<h3>Microstructure reconstruction via artificial neural networks: A combination of causal and non-causal approach</h3>
-						<p>Description here</p>
+						<p>
+							My work investigates the applicability of artificial neural networks (ANNs) in reconstructing a sample image of a sponge-like microstructure. We propose to reconstruct the image by predicting the phase of the current pixel based on its causal neighbourhood, and subsequently, use a non-causal ANN model to smooth out the reconstructed image as a form of post-processing. We also consider the impacts of different configurations of the ANN model (e.g., the number of densely connected layers, the number of neurons in each layer, the size of both the causal and non-causal neighbourhood) on the models' predictive abilities quantified by the discrepancy between the spatial statistics of the reference and the reconstructed sample.
+						</p>
 						<p><Link to='/publications'>Read more</Link></p>
 					</div>
 				</div>
@@ -70,7 +74,15 @@ function Home() {
 					<p><Link to='/service'>View all</Link></p>
 				</div>
 				<hr style={{color: 'black'}}></hr>
-				<h3>Wharton Investment Competition Mentor</h3>
+				<div className="thumbnail">
+					<img style={{width: '40%', height: 'auto'}} src={Investment} alt="" />
+					<div className="thumbnailText">
+						<h3>Wharton Investment Competition Mentor</h3>
+						<p>
+							I prepared weekly lectures about introductory investing topics for a cohort of less experienced students, initiated discussion about various investment strategies, and explained the fundamental rules of the investment competition and the expected deliverables.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	)

@@ -3,7 +3,9 @@ import React from 'react';
 function Service() {
     return (
         <div>
-            <p>Service!</p>
+            <div className="masthead">
+				<h1>Service</h1>
+			</div>
         </div>
     )
 }

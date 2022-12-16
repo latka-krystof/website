@@ -3,7 +3,9 @@ import React from 'react';
 function Publications() {
     return (
         <div>
-            <p>Publications!</p>
+          <div className="masthead">
+						<h1>Publications</h1>
+					</div>
         </div>
     )
 }

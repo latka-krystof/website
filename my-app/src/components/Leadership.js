@@ -3,6 +3,9 @@ import React from 'react';
 function Leadership() {
     return (
         <div>
+					<div className="masthead">
+						<h1>Leadership</h1>
+					</div>
 					<h3>Vervit</h3>
 					<p>
 						Vervit is a non-profit organization, focused on helping elderly citizens in Czech Republic in working with techonology. I lead a programming team which developed a mobile application, freely available on iOS and Android, that provided a user-friendly environment for senior citizens to learn new IT skills.<br />

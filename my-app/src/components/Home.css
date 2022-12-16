@@ -19,11 +19,14 @@ p {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 40px;
+	justify-content: center;
 }
 
 #introText {
 	background-color: rgb(218 235 254);
 	padding: 10px;
+	width: 50%;
+	height: auto;
 }
 
 .heading {
