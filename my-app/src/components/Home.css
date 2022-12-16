@@ -31,3 +31,14 @@ p {
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+.thumbnail {
+	display: flex;
+	flex-direction: row;
+}
+
+.thumbnailText {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}

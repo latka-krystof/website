@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 
 import ProfilePicture from '../assets/TKFF_Fotografie.jpg';
 import CV from '../assets/CV_UCLA_Revised.pdf';
+import ArticlePic from '../assets/Publications_2.png';
+import VervitApp from '../assets/Vervit_App.png';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -33,34 +35,42 @@ function Home() {
 					<p><Link to='/leadership'>View all</Link></p>
 				</div>
 				<hr style={{color: 'black'}}></hr>
-				<h3>Vervit</h3>
-				<p>
-					Vervit is a non-profit organization, focused on helping elderly citizens in Czech Republic in working with techonology. I lead a programming team which developed a mobile application, freely available on iOS and Android, that provided a user-friendly environment for senior citizens to learn new IT skills.<br />
-					<a href="https://www.youtube.com/channel/UC2wYlSqcqfmzFz_5J1s0jHA">YouTube Channel</a><br />
-					<a href="https://apps.apple.com/us/app/vervit/id1586873318">iOS App</a><br />
-					<a href="https://play.google.com/store/apps/details?id=com.vervit.vervit_app">Android App</a>
-				</p>
+				<div className="thumbnail">
+					<img style={{width: '40%', height: 'auto'}} src={VervitApp} alt="" />
+					<div className="thumbnailText">
+						<h3>Vervit</h3>
+						<p>
+							Vervit is a non-profit organization, focused on helping elderly citizens in Czech Republic in working with techonology. I lead a programming team which developed a mobile application, freely available on iOS and Android, that provided a user-friendly environment for senior citizens to learn new IT skills.
+						</p>
+						<p><Link to='/leadership'>Read more</Link></p>
+					</div>
+				</div>
 				<div className="heading">
 					<h2>Experience</h2>
 					<p><Link to='/experience'>View all</Link></p>
 				</div>
 				<hr style={{color: 'black'}}></hr>
 				<h3>Open Mechanics Group, Czech Technical University</h3>
-				<p>
-					<a href="https://doi.org/10.14311/APP.2022.34.0032">Published paper</a><br />
-					<a href="https://gitlab.com/MartinDoskar/ai-based-reconstruction">Source code on GitLab</a>
-				</p>
 				<h3>Computational Robotics Laboratory, Artificial Intelligence Center, Czech Technical University</h3>
 				<div className="heading">
 					<h2>Publications</h2>
 					<p><Link to='/publications'>View all</Link></p>
 				</div>
 				<hr style={{color: 'black'}}></hr>
+				<div className="thumbnail">
+					<img style={{width: '40%', height: 'auto'}} src = {ArticlePic} alt="" />
+					<div className="thumbnailText">
+						<h3>Microstructure reconstruction via artificial neural networks: A combination of causal and non-causal approach</h3>
+						<p>Description here</p>
+						<p><Link to='/publications'>Read more</Link></p>
+					</div>
+				</div>
 				<div className="heading">
 					<h2>Service</h2>
 					<p><Link to='/service'>View all</Link></p>
 				</div>
 				<hr style={{color: 'black'}}></hr>
+				<h3>Wharton Investment Competition Mentor</h3>
 			</div>
 		</div>
 	)
