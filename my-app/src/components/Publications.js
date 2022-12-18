@@ -1,6 +1,7 @@
 import React from 'react';
 import Causal from '../assets/Causal_model.png';
 import NonCausal from '../assets/Non-causal_model.png';
+import Paper from '../assets/Paper.pdf';
 
 function Publications() {
     return (
@@ -15,12 +16,17 @@ function Publications() {
 					<img src={Causal} alt="" width='70%' height='auto' padding='20px' />
 					<img src={NonCausal} alt="" width='70%' height='auto' padding='20px' />
 					<div className='flexRow'>
-						<h3>Authored by</h3>
-						<p>
-							Krystof Latka<br/>
-							Martin Doskar<br/>
-							Jan Zeman
-						</p>
+						<div>
+							<h3>Authored by</h3>
+							<p>
+								Krystof Latka<br/>
+								Martin Doskar<br/>
+								Jan Zeman
+							</p>
+						</div>
+						<a href={Paper}>
+							<button>Download PDF</button>
+						</a>
 					</div>
         </div>
     )
