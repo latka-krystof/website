@@ -43,9 +43,15 @@ a {
 .masthead {
   background-color: rgb(218 235 254);
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

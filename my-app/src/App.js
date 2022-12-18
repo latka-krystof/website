@@ -5,7 +5,6 @@ import Home from './components/Home';
 import Leadership from './components/Leadership';
 import Experience from './components/Experience';
 import Publications from './components/Publications';
-import Service from './components/Service';
 
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 
@@ -18,7 +17,6 @@ function App() {
           <p><Link style={{textDecoration: 'none', color: 'black'}} to='/leadership'>Leadership</Link></p>
           <p><Link style={{textDecoration: 'none', color: 'black'}} to='/experience'>Experience</Link></p>
           <p><Link style={{textDecoration: 'none', color: 'black'}} to='/publications'>Publications</Link></p>
-          <p><Link style={{textDecoration: 'none', color: 'black'}} to='/service'>Service</Link></p>
         </div>
       </div>
       <div id = "content">
@@ -27,7 +25,6 @@ function App() {
           <Route path='/leadership' element={<Leadership />} />
           <Route path='/experience' element={<Experience />} />
           <Route path='/publications' element={<Publications />} />
-          <Route path='/service' element={<Service />} />
         </Routes>
       </div>
     </div>
