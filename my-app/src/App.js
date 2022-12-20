@@ -26,6 +26,7 @@ function App() {
           <Route path='/experience' element={<Experience />} />
           <Route path='/publications' element={<Publications />} />
         </Routes>
+        <p style={{textAlign: 'center'}}>2023 Krystof Latka</p>
       </div>
     </div>
   );

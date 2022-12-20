@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: Roboto;
+}
+
 h1 {
   margin: 10px;
 }
@@ -53,5 +59,6 @@ a {
 .flexRow {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
 }
