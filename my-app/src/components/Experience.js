@@ -14,26 +14,39 @@ function Experience() {
           <div className="masthead">
 						<h1>Experience</h1>
 					</div>
-          <h2>Open Mechanics Group, Czech Technical University</h2>
-					<hr style={{color: 'black'}}></hr>
-					<p>I conducted research on microstructure reconstruction via artificial neural networks in TensorFlow at the Department of Mechanics under the co-supervision of Professor Jan Zeman and Dr. Martin Doškář. I evaluated the impacts of different configurations of the neural network on the model’s predictive abilities and presented the results at the ”Nano and Micro Mechanics 2021” conference at Czech Technical University.</p>
-					<div style={{margin: '10px'}}>
-						<Button variant="outlined" href={Presentation} startIcon={<DownloadIcon />}>
-							Conference Presentation
-						</Button>
+					<div className='item'>
+						<div className='flexRow'>
+							<h2>Open Mechanics Group, Czech Technical University</h2>
+							<h3>July 2021</h3>
+						</div>
+						<hr style={{color: 'black'}}></hr>
+						<p>I conducted research on microstructure reconstruction via artificial neural networks in TensorFlow at the Department of Mechanics under the co-supervision of Professor Jan Zeman and Dr. Martin Doškář. I evaluated the impacts of different configurations of the neural network on the model's predictive abilities and presented the results at the ”Nano and Micro Mechanics 2021” conference at Czech Technical University.</p>
+						<div style={{margin: '10px'}}>
+							<Button variant="outlined" href={Presentation} startIcon={<DownloadIcon />}>
+								Conference Presentation
+							</Button>
+						</div>
+						<div style={{margin: '10px'}}>
+							<Button variant="outlined" href="https://gitlab.com/MartinDoskar/ai-based-reconstruction" startIcon={<LinkIcon />}>
+								Source code on GitLab
+							</Button>
+						</div>
+						<h3>In media</h3>
+						<div className="flexRow" style={{justifyContent: 'space-evenly'}}>
+							<img src={LinkedIn} alt="" style={{width: '40%', height: 'auto'}} />
+							<img src={Twitter} alt="" style={{width: '40%', height: 'auto'}} />
+						</div>
 					</div>
-					<div style={{margin: '10px'}}>
-						<Button variant="outlined" href="https://gitlab.com/MartinDoskar/ai-based-reconstruction" startIcon={<LinkIcon />}>
-							Source code on GitLab
-						</Button>
+					<div className='item'>
+						<div className="flexRow">
+							<h2>Computational Robotics Laboratory, AI Center, Czech Technical University</h2>
+							<h3>June - July 2021</h3>
+						</div>
+						<hr style={{color: 'black'}}></hr>
+						<p>
+							I interned at the Computational Robotics Laboratory, a robotic laboratory within the Artificial Intelligence Center. I primarily worked on post-processing data recorded at a field trip with various autonomous robots. I utilized the Rospy library to write Python scripts and used them to extract desired data from Robot Operating System (ROS) files.
+						</p>
 					</div>
-					<h3>In media</h3>
-					<div className="flexRow" style={{justifyContent: 'space-evenly'}}>
-						<img src={LinkedIn} alt="" style={{width: '40%', height: 'auto'}} />
-						<img src={Twitter} alt="" style={{width: '40%', height: 'auto'}} />
-					</div>
-					<h2>Computational Robotics Laboratory, Artificial Intelligence Center, Czech Technical University</h2>
-					<hr style={{color: 'black'}}></hr>
         </div>
     )
 }

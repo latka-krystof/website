@@ -1,12 +1,11 @@
 import './App.css';
 
-import React, { useEffect, useState } from 'react';
 import Home from './components/Home';
 import Leadership from './components/Leadership';
 import Experience from './components/Experience';
 import Publications from './components/Publications';
 
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -26,7 +25,7 @@ function App() {
           <Route path='/experience' element={<Experience />} />
           <Route path='/publications' element={<Publications />} />
         </Routes>
-        <p style={{textAlign: 'center'}}>2023 Krystof Latka</p>
+        <p style={{textAlign: 'center'}}>2022 Krystof Latka</p>
       </div>
     </div>
   );
