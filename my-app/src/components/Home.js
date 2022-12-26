@@ -37,7 +37,7 @@ function Home() {
 						</Button>
 					</div>
 				</div>
-				<img style={{width: '35%', height: 'auto'}} src={ProfilePicture} alt="" />
+				<img style={{width: '35%', height: 'auto', minWidth: '500px'}} src={ProfilePicture} alt="" />
 			</div>
 			<div>
 				<div className="item">
@@ -47,7 +47,7 @@ function Home() {
 					</div>
 					<hr style={{color: 'black'}}></hr>
 					<div className="thumbnail">
-						<img style={{width: '40%', height: 'auto'}} src={VervitApp} alt="" />
+						<img style={{width: '40%', height: 'auto', minWidth: '500px'}} src={VervitApp} alt="" />
 						<div className="thumbnailText">
 							<h3>Vervit</h3>
 							<p>
@@ -64,7 +64,7 @@ function Home() {
 					</div>
 					<hr style={{color: 'black'}}></hr>
 					<div className="thumbnail">
-						<img style={{width: '30%', height: 'auto'}} src={ArticlePic} alt="" />
+						<img style={{width: '30%', height: 'auto', minWidth: '500px'}} src={ArticlePic} alt="" />
 						<div className="thumbnailText">
 							<h3>Open Mechanics Group, Czech Technical University</h3>
 							<p>
@@ -80,7 +80,7 @@ function Home() {
 					</div>
 					<hr style={{color: 'black'}}></hr>
 					<div className="thumbnail">
-						<img style={{width: '45%', height: 'auto'}} src = {ArticleThumbnail} alt="" />
+						<img style={{width: '45%', height: 'auto', minWidth: '500px'}} src = {ArticleThumbnail} alt="" />
 						<div className="thumbnailText">
 							<h3>Microstructure reconstruction via artificial neural networks: A combination of causal and non-causal approach</h3>
 							<p>

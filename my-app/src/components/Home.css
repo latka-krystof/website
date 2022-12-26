@@ -20,13 +20,13 @@ p {
 	flex-direction: row;
 	margin-bottom: 40px;
 	justify-content: center;
+	flex-wrap: wrap-reverse;
 }
 
 #introText {
 	background-color: rgb(218 235 254);
-	padding: 10px;
 	width: 50%;
-	height: auto;
+	min-width: 500px;
 }
 
 .heading {
@@ -38,10 +38,14 @@ p {
 .thumbnail {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .thumbnailText {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	width: 50%;
+	min-width: 500px;
 }
