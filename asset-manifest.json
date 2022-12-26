@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6810601c.css",
+    "main.js": "/static/js/main.281c9e3a.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Presentation.pdf": "/static/media/Presentation.21be3326ae88d35a35d8.pdf",
+    "static/media/Twitter.png": "/static/media/Twitter.3dfd065eb77797feba36.png",
+    "static/media/Profile_Pic.JPG": "/static/media/Profile_Pic.29363cff35fdfb8b9a2b.JPG",
+    "static/media/Vervit_App.png": "/static/media/Vervit_App.ebb5abe4513d392a017a.png",
+    "static/media/Causal_model.png": "/static/media/Causal_model.7ecf4babaf2c16a8d0b6.png",
+    "static/media/Paper.pdf": "/static/media/Paper.4c403ecd3fe6e54a4090.pdf",
+    "static/media/LinkedIn.png": "/static/media/LinkedIn.5a5299e782939a7d0e39.png",
+    "static/media/Article_Thumbnail.png": "/static/media/Article_Thumbnail.3912dec4f9661d6eced3.png",
+    "static/media/Non-causal_model.png": "/static/media/Non-causal_model.7f05030b3aba00f617d1.png",
+    "static/media/Resume.pdf": "/static/media/Resume.212ae7306fa9f1f1b30f.pdf",
+    "static/media/Publications_1.png": "/static/media/Publications_1.4b53c9ac32a7eb8ec432.png",
+    "index.html": "/index.html",
+    "main.6810601c.css.map": "/static/css/main.6810601c.css.map",
+    "main.281c9e3a.js.map": "/static/js/main.281c9e3a.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6810601c.css",
+    "static/js/main.281c9e3a.js"
+  ]
+}
