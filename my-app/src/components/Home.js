@@ -14,10 +14,14 @@ import DownloadIcon from '@mui/icons-material/Download';
 import { Link } from 'react-router-dom';
 
 function Home() {
+
+	var w = window.screen.width;
+	const MIN_ELEMENT_WIDTH = 0.35
+
 	return (
 		<div>
 			<div id="intro">
-				<div id = "introText">
+				<div id = "introText" style={{minWidth: MIN_ELEMENT_WIDTH * w}}>
 					<p>
 						I am a first-year undergraduate student at <a href="https://www.ucla.edu"><b>University of California, Los Angeles</b>,</a> pursuing a Bachelor of Science in Computer Engineering. 
 					</p>
@@ -37,7 +41,7 @@ function Home() {
 						</Button>
 					</div>
 				</div>
-				<img style={{width: '35%', height: 'auto', minWidth: '500px'}} src={ProfilePicture} alt="" />
+				<img style={{width: '35%', minWidth: MIN_ELEMENT_WIDTH * w, objectFit: 'contain'}} src={ProfilePicture} alt="" />
 			</div>
 			<div>
 				<div className="item">
@@ -47,8 +51,8 @@ function Home() {
 					</div>
 					<hr style={{color: 'black'}}></hr>
 					<div className="thumbnail">
-						<img style={{width: '40%', height: 'auto', minWidth: '500px'}} src={VervitApp} alt="" />
-						<div className="thumbnailText">
+						<img style={{width: '40%', height: 'auto', minWidth: MIN_ELEMENT_WIDTH * w}} src={VervitApp} alt="" />
+						<div className="thumbnailText" style={{minWidth: MIN_ELEMENT_WIDTH * w}}>
 							<h3>Vervit</h3>
 							<p>
 								Vervit is a non-profit organization, focused on helping elderly citizens in Czech Republic in working with techonology. I lead a programming team which developed a mobile application, freely available on iOS and Android, that provided a user-friendly environment for senior citizens to learn new IT skills.
@@ -64,8 +68,8 @@ function Home() {
 					</div>
 					<hr style={{color: 'black'}}></hr>
 					<div className="thumbnail">
-						<img style={{width: '30%', height: 'auto', minWidth: '500px'}} src={ArticlePic} alt="" />
-						<div className="thumbnailText">
+						<img style={{width: '30%', height: 'auto', minWidth: MIN_ELEMENT_WIDTH * w, objectFit: 'contain'}} src={ArticlePic} alt="" />
+						<div className="thumbnailText" style={{minWidth: MIN_ELEMENT_WIDTH * w}}>
 							<h3>Open Mechanics Group, Czech Technical University</h3>
 							<p>
 							I conducted research on microstructure reconstruction via artificial neural networks in TensorFlow at the Department of Mechanics under the co-supervision of Professor Jan Zeman and Dr. Martin Doškář. I evaluated the impacts of different configurations of the neural network on the model’s predictive abilities and presented the results at the ”Nano and Micro Mechanics 2021” conference at Czech Technical University.I conducted research on microstructure reconstruction via artificial neural networks in TensorFlow at the Department of Mechanics under the co-supervision of Professor Jan Zeman and Dr. Martin Doškář. I evaluated the impacts of different configurations of the neural network on the model’s predictive abilities and presented the results at the ”Nano and Micro Mechanics 2021” conference at Czech Technical University.</p>
@@ -80,8 +84,8 @@ function Home() {
 					</div>
 					<hr style={{color: 'black'}}></hr>
 					<div className="thumbnail">
-						<img style={{width: '45%', height: 'auto', minWidth: '500px'}} src = {ArticleThumbnail} alt="" />
-						<div className="thumbnailText">
+						<img style={{width: '45%', height: 'auto', minWidth: MIN_ELEMENT_WIDTH * w, objectFit: 'contain'}} src = {ArticleThumbnail} alt="" />
+						<div className="thumbnailText" style={{minWidth: MIN_ELEMENT_WIDTH * w}}>
 							<h3>Microstructure reconstruction via artificial neural networks: A combination of causal and non-causal approach</h3>
 							<p>
 								My work investigates the applicability of artificial neural networks (ANNs) in reconstructing a sample image of a sponge-like microstructure. We propose to reconstruct the image by predicting the phase of the current pixel based on its causal neighbourhood, and subsequently, use a non-causal ANN model to smooth out the reconstructed image as a form of post-processing. We also consider the impacts of different configurations of the ANN model (e.g., the number of densely connected layers, the number of neurons in each layer, the size of both the causal and non-causal neighbourhood) on the models' predictive abilities quantified by the discrepancy between the spatial statistics of the reference and the reconstructed sample.

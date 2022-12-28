@@ -9,6 +9,10 @@ import LinkedIn from '../assets/LinkedIn.png';
 import Twitter from '../assets/Twitter.png';
 
 function Experience() {
+
+	var w = window.screen.width;
+	const MIN_ELEMENT_WIDTH = 0.35;
+
     return (
         <div>
           <div className="masthead">
@@ -33,8 +37,8 @@ function Experience() {
 						</div>
 						<h3>In media</h3>
 						<div className="flexRow" style={{justifyContent: 'space-evenly'}}>
-							<img src={LinkedIn} alt="" style={{width: '40%', height: 'auto'}} />
-							<img src={Twitter} alt="" style={{width: '40%', height: 'auto'}} />
+							<img src={LinkedIn} alt="" style={{width: '40%', minWidth: MIN_ELEMENT_WIDTH * w, objectFit: 'contain'}} />
+							<img src={Twitter} alt="" style={{width: '40%', minWidth: MIN_ELEMENT_WIDTH * w, objectFit: 'contain'}} />
 						</div>
 					</div>
 					<div className='item'>

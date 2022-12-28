@@ -26,7 +26,6 @@ p {
 #introText {
 	background-color: rgb(218 235 254);
 	width: 50%;
-	min-width: 500px;
 }
 
 .heading {
@@ -47,5 +46,4 @@ p {
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 50%;
-	min-width: 500px;
 }
