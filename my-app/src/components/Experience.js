@@ -1,5 +1,4 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
 
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
@@ -10,6 +9,13 @@ import LinkedIn from '../assets/LinkedIn.png';
 import Twitter from '../assets/Twitter.png';
 
 function Experience() {
+
+	var w = window.screen.width;
+	var MIN_ELEMENT_WIDTH = 0.35;
+
+	if (w < 640) {
+		MIN_ELEMENT_WIDTH = 0.70;
+	}
 
     return (
         <div>
@@ -35,8 +41,8 @@ function Experience() {
 						</div>
 						<h3>In media</h3>
 						<div className="flexRow" style={{justifyContent: 'space-evenly'}}>
-							<img src={LinkedIn} alt="" style={{width: '40%', objectFit: 'contain'}} />
-							<img src={Twitter} alt="" style={{width: '40%', objectFit: 'contain'}} />
+							<img src={LinkedIn} alt="" style={{width: '40%', minWidth: MIN_ELEMENT_WIDTH * w, objectFit: 'contain'}} />
+							<img src={Twitter} alt="" style={{width: '40%', minWidth: MIN_ELEMENT_WIDTH * w, objectFit: 'contain'}} />
 						</div>
 					</div>
 					<div className='item'>
@@ -53,23 +59,4 @@ function Experience() {
     )
 }
 
-var w = window.screen.width;
-const DESKTOP_ELEMENT_WIDTH = 0.35;
-const MOBILE_ELEMENT_WIDTH = 0.70;
-
-const styles = {
-	'@media (max-width: 640px)': {
-		'img': {
-			minWidth: MOBILE_ELEMENT_WIDTH * w,
-		},
-	},
-	'@media (min-width: 641px)': {
-		'img': {
-			minWidth: DESKTOP_ELEMENT_WIDTH * w,
-		},
-	},
-}
-
-export default styled(Experience)`
-  ${css(styles)}
-`;
+export default Experience;
