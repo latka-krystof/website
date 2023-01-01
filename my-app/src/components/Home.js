@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 function Home() {
 
 	var w = window.screen.width;
-	const MIN_ELEMENT_WIDTH = 0.35;
+	var MIN_ELEMENT_WIDTH = 0.35;
 
 	if (w < 640) {
 		MIN_ELEMENT_WIDTH = 0.70;
