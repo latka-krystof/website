@@ -13,7 +13,7 @@ function Experience() {
 	var w = window.screen.width;
 	var MIN_ELEMENT_WIDTH = 0.35;
 
-	if (w < 640) {
+	if (w < 551) {
 		MIN_ELEMENT_WIDTH = 0.70;
 	}
 
